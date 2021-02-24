@@ -1,13 +1,11 @@
 from __future__ import annotations
-import random
-import time
-import request_
-from models import (
+from . import request_
+from .models import (
     db, init_tables, Employer,
     approvalTask, row2dict,
     Resource
 )
-from duty_chain import get_chain
+from .duty_chain import get_chain
 
 def main():
     # 已经执行过，数据库有10条记录

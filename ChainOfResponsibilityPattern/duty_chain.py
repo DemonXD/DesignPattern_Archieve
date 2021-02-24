@@ -1,10 +1,8 @@
 from __future__ import annotations
-import random
-import time
-import request_
 from abc import ABC, abstractmethod
 from typing import Any, Optional
-from models import Resource
+from .models import Resource
+
 
 class Handler(ABC):
     """
